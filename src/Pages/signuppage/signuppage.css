@@ -1,0 +1,81 @@
+.signup__page{
+    height: 100vh;
+    width: 100%;    
+    position: relative;
+    background: url("../../assets/Netflix_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signup__page::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 100px 100px 250px #000000, inset -100px -100px 250px #000000;
+}
+nav{
+    position: absolute;
+    top: 0;
+}
+.modal{
+    position: relative;    
+    width: min(500px, 90%);
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+.modal h3{
+    margin-bottom: 0.7rem;
+}
+.modal form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.modal b{
+    color: #fff;    
+}
+.modal b:hover{
+    text-decoration: underline;
+}
+.modal p{ 
+  margin-top: 0.5rem;
+}
+form div{
+    width: 100%;
+    position: relative;
+}
+form div input{
+    width: 100%;    
+}
+
+form .button{
+    width: 100%;
+    background: var(--netflix-primary-color);
+    color: #fff;
+    padding: 1rem 1.3rem;
+    font-size: var(--fs-sm);
+    outline: none;
+    border: none;
+}
+form button:hover{
+    opacity: 0.9;
+}
+form input.has-value + span{
+    top: 3px;
+    font-size: 0.8rem;
+}
+form input.has-value{
+    border-bottom: 2px solid var(--netflix-golden-color);
+}
+
